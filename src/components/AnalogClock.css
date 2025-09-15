@@ -1,0 +1,100 @@
+.advanced-analog-clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  transition: transform 0.3s;
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ffffff, #e0e0e0);
+  box-shadow: 
+    inset -8px -8px 20px rgba(0,0,0,0.1),
+    inset 8px 8px 20px rgba(255,255,255,0.7),
+    0 10px 25px rgba(0,0,0,0.2);
+  transition: background 1s linear;
+}
+
+/* Hour marks */
+.hour-mark {
+  position: absolute;
+  width: 4px;
+  height: 15px;
+  top: 0;
+  left: 50%;
+  transform-origin: center bottom;
+  background: #333;
+  border-radius: 2px;
+  box-shadow: 0 0 2px #000;
+}
+
+/* Hands with smooth transition */
+.hand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  transform: rotate(0deg);
+  border-radius: 4px;
+  transition: transform 0.05s linear;
+}
+
+.hand.hour {
+  width: 6px;
+  height: 60px;
+  margin-left: -3px;
+  margin-top: -60px;
+  background: #222;
+  z-index: 3;
+}
+
+.hand.minute {
+  width: 4px;
+  height: 80px;
+  margin-left: -2px;
+  margin-top: -80px;
+  background: #555;
+  z-index: 2;
+}
+
+.hand.second {
+  width: 2px;
+  height: 90px;
+  margin-left: -1px;
+  margin-top: -90px;
+  background: red;
+  z-index: 1;
+}
+
+/* Center circle */
+.center-circle {
+  width: 16px;
+  height: 16px;
+  background: #333;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+/* Hover effect */
+.advanced-analog-clock:hover {
+  transform: scale(1.05);
+}
+
+/* Optional smooth gradient animation */
+@keyframes clockFaceGradient {
+  0% { background: radial-gradient(circle at 30% 30%, #ffffff, #e0e0e0); }
+  50% { background: radial-gradient(circle at 30% 30%, #f0f0f0, #cfd3d6); }
+  100% { background: radial-gradient(circle at 30% 30%, #ffffff, #e0e0e0); }
+}
+
+.clock-face {
+  animation: clockFaceGradient 30s linear infinite;
+}

@@ -1,0 +1,67 @@
+body, html, #root {
+  margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 20px;
+  transition: all 0.5s ease;
+}
+
+.app.light {
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  color: #222;
+}
+
+.app.dark {
+  background: linear-gradient(135deg, #1f1f1f, #333);
+  color: #fff;
+}
+
+header, footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.clocks, .world-clocks, .utilities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.digital-clock, .timezone-clock, .timer, .stopwatch, .alarm {
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.85);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  min-width: 180px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.app.dark .digital-clock, .app.dark .timezone-clock, .app.dark .timer, .app.dark .stopwatch, .app.dark .alarm {
+  background: rgba(0,0,0,0.6);
+}
+
+button {
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #444;
+  color: #fff;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #222;
+}
+
+.theme-toggle {
+  margin-top: 10px;
+  padding: 8px 15px;
+  font-size: 16px;
+  border-radius: 10px;
+}
