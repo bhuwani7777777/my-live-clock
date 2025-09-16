@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.5af6608f.css",
-    "main.js": "/static/js/main.99db54f1.js",
-    "static/js/453.1eb6e76b.chunk.js": "/static/js/453.1eb6e76b.chunk.js",
-    "index.html": "/index.html",
-    "main.5af6608f.css.map": "/static/css/main.5af6608f.css.map",
-    "main.99db54f1.js.map": "/static/js/main.99db54f1.js.map",
-    "453.1eb6e76b.chunk.js.map": "/static/js/453.1eb6e76b.chunk.js.map"
+    "main.css": "/bhuwani7777777/my-live-clock.git/static/css/main.5af6608f.css",
+    "main.js": "/bhuwani7777777/my-live-clock.git/static/js/main.92fa98ee.js",
+    "static/js/453.1eb6e76b.chunk.js": "/bhuwani7777777/my-live-clock.git/static/js/453.1eb6e76b.chunk.js",
+    "index.html": "/bhuwani7777777/my-live-clock.git/index.html",
+    "main.5af6608f.css.map": "/bhuwani7777777/my-live-clock.git/static/css/main.5af6608f.css.map",
+    "main.92fa98ee.js.map": "/bhuwani7777777/my-live-clock.git/static/js/main.92fa98ee.js.map",
+    "453.1eb6e76b.chunk.js.map": "/bhuwani7777777/my-live-clock.git/static/js/453.1eb6e76b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5af6608f.css",
-    "static/js/main.99db54f1.js"
+    "static/js/main.92fa98ee.js"
   ]
 }
